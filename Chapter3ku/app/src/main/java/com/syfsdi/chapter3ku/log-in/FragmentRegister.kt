@@ -7,8 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.syfsdi.chapter3ku.R
 
--in
-
 class FragmentRegister : Fragment() {
 
     override fun onCreateView(
