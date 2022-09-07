@@ -6,6 +6,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
+import com.syfsdi.chapter3ku.R
+import com.syfsdi.chapter3ku.databinding.LupapasswordFragmentBinding
 
 
 class FragmentLogin : Fragment(){
@@ -15,7 +18,7 @@ class FragmentLogin : Fragment(){
             savedInstanceState: Bundle?
         ): View? {
             // Inflate the layout for this fragment
-            return inflater.inflate(R.layout.fragment_form_login, container, false)
+            return inflater.inflate(R.layout.fragmentlogin, container, false)
         }
 
         override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,10 +36,10 @@ class FragmentLogin : Fragment(){
                     Toast.makeText(context,"Data tidak benar, coba lagi", Toast.LENGTH_SHORT).show()
                 }
             }
-            lupaPassword.setOnClickListener {
+            LupapasswordFragmentBinding.setOnClickListener {
                 Navigation.findNavController(view).navigate(R.id.lupasFragment)
             }
-            register.setOnClickListener {
+            regis.setOnClickListener {
                 Navigation.findNavController(view).navigate(R.id.registerFragment)
             }
             btnChat.setOnClickListener {
