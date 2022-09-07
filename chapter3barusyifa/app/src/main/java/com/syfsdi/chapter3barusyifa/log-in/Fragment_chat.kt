@@ -5,7 +5,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.syfsdi.chapter3barusyifa.R
-import com.syfsdi.chapter3ku.R
 
 
 class Fragment_chat : Fragment() {

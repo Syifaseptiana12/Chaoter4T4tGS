@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.syfsdi.chapter3barusyifa.R
 
--in
 
 class FragmentLupaPassword : Fragment(){
         override fun onCreateView(
@@ -18,4 +17,3 @@ class FragmentLupaPassword : Fragment(){
             return inflater.inflate(R.layout.lupapassword_fragment, container, false)
         }
     }
-}

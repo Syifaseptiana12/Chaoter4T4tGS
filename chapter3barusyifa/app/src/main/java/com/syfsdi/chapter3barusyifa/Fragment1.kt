@@ -12,15 +12,15 @@ class Fragment1  : Fragment1(){
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_satu, container, false)
+        return inflater.inflate(R.layout.fragment1, container, false)
 
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btnToDua.setOnClickListener {
-            Navigation.findNavController(view).navigate(R.id.fragmentDua)
+        buttontodua.setOnClickListener {
+            Navigation.findNavController(view).navigate(R.id.fragmentContainerView2)
         }
     }
 }
