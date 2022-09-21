@@ -28,8 +28,15 @@ class MainActivity : AppCompatActivity() {
 
         adapterStudent.onClick = {
             var pindah = Intent (this, DetailStudentActivity:: class.java)
-            pindah.putExtra("detailStudent",listStudent)
+            pindah.putExtra("detailStudent",it)
             startActivity(pindah)
+        }
+
+        btnUpdateNoDiff.setOnClickListener{
+                ListStudent("Update Ike", "2017172", R.drawable.aku).also { ListStudent[3] = it }
+            adapterStudent[3]= StudentAdapter(ListStudent)
+            rvStudent.adapter =adapterStudent
+            adapterStudent.notifyDataSetChanged()
         }
 
 

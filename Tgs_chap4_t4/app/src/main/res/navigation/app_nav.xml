@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app_nav"
+    app:startDestination="@id/StartFragment">
+
+    <fragment
+        android:id="@+id/StartFragment"
+        android:name="com.syfsdi.tgs_chap4_t4.StartFragment"
+        android:label="Fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_FragmentStart"/>
+    </fragment>
+
+</navigation>
